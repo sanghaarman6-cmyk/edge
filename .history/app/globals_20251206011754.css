@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+/* 🔧 Remove Plyr bottom gradient & make player controls fully transparent */
+.plyr--video .plyr__controls {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Optional: make timeline & volume bars pure white or light gray */
+.plyr--video .plyr__progress input[type=range],
+.plyr--video .plyr__volume input[type=range] {
+  color: #ffffff !important;
+}
+/* 🎨 Customize Plyr player color */
+:root {
+  --plyr-color-main: #ffffff; /* White */
+}
+/* Hide scrollbars everywhere but keep scrolling */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+* {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE & Edge */
+}
+
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
