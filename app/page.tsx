@@ -3,30 +3,13 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const instagramProfileUrl = "https://www.instagram.com/armanfxs/";
-const instagramDmUrl = "https://ig.me/m/armanfxs";
+const skoolUrl = "https://www.skool.com/edge-private-fund-1626/about";
 
 const stats = [
-  {
-    label: "2026 YTD",
-    value: "+23.91%",
-    note: "Current year performance",
-  },
-  {
-    label: "Best Month",
-    value: "+8.43%",
-    note: "May 2026",
-  },
-  {
-    label: "Worst Month",
-    value: "-4.66%",
-    note: "January 2026",
-  },
-  {
-    label: "Tracked Data",
-    value: "2014–2026",
-    note: "Historical period",
-  },
+  { label: "2026 YTD", value: "+23.91%", note: "Current year performance" },
+  { label: "Best Month", value: "+8.43%", note: "May 2026" },
+  { label: "Worst Month", value: "-4.66%", note: "January 2026" },
+  { label: "Tracked Data", value: "2014–2026", note: "Historical period" },
 ];
 
 const monthlyReturns = [
@@ -105,7 +88,7 @@ const faq = [
   {
     question: "How do I get access?",
     answer:
-      "Click Get Access and message @armanfxs on Instagram. You will receive current details, structure and availability privately.",
+      "Click Get Access to open the private Skool community, where you can request membership and view the full details.",
   },
   {
     question: "Is this financial advice?",
@@ -150,42 +133,32 @@ function AccessModal({
         </button>
 
         <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#C6A86A]">
-          Private Access
+          Private Membership
         </p>
 
         <h3 className="text-3xl font-light tracking-tight text-white">
-          Request access through Instagram.
+          Join Edge Private Fund
         </h3>
 
         <p className="mt-5 text-sm leading-7 text-white/55">
-          Membership is handled privately. Send a DM to{" "}
-          <span className="text-[#C6A86A]">@armanfxs</span> and ask for access
-          to Edge Private Fund.
+          Membership is hosted privately on Skool. Click below to view the
+          community and request access.
         </p>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-8">
           <a
-            href={instagramDmUrl}
+            href={skoolUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-white px-6 py-3 text-center text-sm font-medium text-black transition hover:bg-[#C6A86A]"
+            className="block w-full rounded-full bg-white px-6 py-3 text-center text-sm font-medium text-black transition hover:bg-[#C6A86A]"
           >
-            Open Instagram DM
-          </a>
-
-          <a
-            href={instagramProfileUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full border border-white/15 px-6 py-3 text-center text-sm font-medium text-white/75 transition hover:border-[#C6A86A] hover:text-[#C6A86A]"
-          >
-            View Profile
+            Request Membership
           </a>
         </div>
 
         <p className="mt-6 text-xs leading-6 text-white/30">
-          Trading involves risk. Access does not guarantee results, returns or
-          profitability.
+          Trading involves risk. Past performance does not guarantee future
+          results.
         </p>
       </div>
     </div>
@@ -287,9 +260,9 @@ export default function Home() {
           </h1>
 
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-white/60 md:text-xl">
-            Edge Private Fund gives members access to daily NAS100 model
-            outputs from a fully mechanical trading system, supported by
-            historical testing, live tracking and transparent performance.
+            Edge Private Fund gives members access to daily NAS100 model outputs
+            from a fully mechanical trading system, supported by historical
+            testing, live tracking and transparent performance.
           </p>
 
           <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -316,7 +289,7 @@ export default function Home() {
             ["Market", "NAS100"],
             ["Output", "Up to 2 trades daily"],
             ["Style", "Fully mechanical"],
-            ["Access", "@armanfxs"],
+            ["Membership", "Hosted on Skool"],
           ].map(([label, value]) => (
             <div
               key={label}
@@ -373,7 +346,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="performance" className="border-y border-white/10 bg-[#080808] px-6 py-28">
+      <section
+        id="performance"
+        className="border-y border-white/10 bg-[#080808] px-6 py-28"
+      >
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Performance Overview"
@@ -510,7 +486,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="history" className="border-y border-white/10 bg-[#080808] px-6 py-28">
+      <section
+        id="history"
+        className="border-y border-white/10 bg-[#080808] px-6 py-28"
+      >
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Historical Data"
@@ -545,8 +524,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl">
           <SectionHeading
             eyebrow="Verification"
-            title="Performance should be displayed clearly and directly."
-            text="Place your Myfxbook screenshot inside the public folder as myfxbook.png and this section will display it automatically."
+            title="Performance displayed clearly and directly."
+            text="The Myfxbook screenshot is shown as a visual reference alongside the historical and monthly data."
           />
 
           <div className="rounded-3xl border border-white/10 bg-black p-4 shadow-2xl shadow-black/40 md:p-6">
@@ -569,7 +548,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="faq" className="border-y border-white/10 bg-[#080808] px-6 py-28">
+      <section
+        id="faq"
+        className="border-y border-white/10 bg-[#080808] px-6 py-28"
+      >
         <div className="mx-auto max-w-5xl">
           <SectionHeading
             eyebrow="FAQ"
@@ -597,7 +579,7 @@ export default function Home() {
       <section id="join" className="bg-[#050505] px-6 py-28">
         <div className="mx-auto max-w-4xl rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-8 text-center md:p-14">
           <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#C6A86A]">
-            Private Access
+            Private Membership
           </p>
 
           <h2 className="text-4xl font-light tracking-tight text-white md:text-6xl">
@@ -605,8 +587,8 @@ export default function Home() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/50">
-            Access is handled privately through Instagram. Click below to open
-            the access popup and send a DM to @armanfxs.
+            Membership is managed through our private Skool community. Click
+            below to view the community and request access.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -634,19 +616,17 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-white/10 bg-black px-6 py-10">
-        <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 text-xs text-white/35 md:flex-row">
-          <div>
-            <p className="text-white/50">
-              © 2026 Edge Private Fund. All rights reserved.
-            </p>
+        <div className="mx-auto max-w-7xl text-center text-xs text-white/35">
+          <p className="text-white/50">
+            © 2026 Edge Private Fund. All rights reserved.
+          </p>
 
-            <p className="mt-2 max-w-2xl leading-6">
-              The information on this website is for general market research
-              purposes only. It should not be considered financial advice,
-              investment advice or a recommendation to buy or sell any financial
-              instrument.
-            </p>
-          </div>
+          <p className="mx-auto mt-3 max-w-3xl leading-6">
+            The information on this website is for general market research
+            purposes only. It should not be considered financial advice,
+            investment advice or a recommendation to buy or sell any financial
+            instrument.
+          </p>
         </div>
       </footer>
     </main>
