@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const telegramUrl = "https://t.me/+zMXclKPv8CZiNzE0";
+const telegramUrl = "hhttps://t.me/+KZQzlBDgHIY1N2Vk";
 
 const stats = [
   { label: "2026 YTD", value: "+23.91%", note: "Current year performance" },
