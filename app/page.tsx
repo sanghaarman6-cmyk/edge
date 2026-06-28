@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-const skoolUrl = "https://www.skool.com/edge-private-fund-1626/about";
+const telegramUrl = "https://t.me/+zMXclKPv8CZiNzE0";
 
 const stats = [
   { label: "2026 YTD", value: "+23.91%", note: "Current year performance" },
@@ -50,8 +50,8 @@ const modelDetails = [
     body: "The system follows predefined conditions. It is not built around emotional bias, guesswork or random trade calls.",
   },
   {
-    title: "Live tracking and review",
-    body: "Performance is monitored continuously so members can see results with drawdown and risk context.",
+    title: "Free Telegram access",
+    body: "The free Telegram gives users updates, performance context, education around the model and next steps.",
   },
 ];
 
@@ -86,14 +86,14 @@ const faq = [
       "Members receive up to two NAS100 trade opportunities per trading day from a fully mechanical system, including entry, stop-loss and take-profit levels.",
   },
   {
-    question: "How do I get access?",
+    question: "How do I join?",
     answer:
-      "Click Get Access to open the private Skool community, where you can request membership and view the full details.",
+      "Click Join Free Telegram to enter the free group. Inside, you can learn more about the model, performance and next steps.",
   },
   {
     question: "Is this financial advice?",
     answer:
-      "No. Edge Private Fund provides market research and discretionary trade ideas only. You are responsible for your own trading decisions and risk.",
+      "No. Edge Private Fund provides market research and trade ideas only. You are responsible for your own trading decisions and risk.",
   },
   {
     question: "Are losses shown?",
@@ -133,26 +133,26 @@ function AccessModal({
         </button>
 
         <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#C6A86A]">
-          Private Membership
+          Free Telegram Access
         </p>
 
         <h3 className="text-3xl font-light tracking-tight text-white">
-          Join Edge Private Fund
+          Join the free Edge Telegram.
         </h3>
 
         <p className="mt-5 text-sm leading-7 text-white/55">
-          Membership is hosted privately on Skool. Click below to view the
-          community and request access.
+          Get access to NAS100 model updates, performance insights, trading
+          education and further instructions inside the free Telegram group.
         </p>
 
         <div className="mt-8">
           <a
-            href={skoolUrl}
+            href={telegramUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full rounded-full bg-white px-6 py-3 text-center text-sm font-medium text-black transition hover:bg-[#C6A86A]"
           >
-            Request Membership
+            Join Free Telegram
           </a>
         </div>
 
@@ -231,7 +231,7 @@ export default function Home() {
               onClick={() => setModalOpen(true)}
               className="rounded-full border border-white/15 px-5 py-2 text-white transition hover:border-[#C6A86A] hover:text-[#C6A86A]"
             >
-              Get Access
+              Join Telegram
             </button>
           </div>
 
@@ -239,7 +239,7 @@ export default function Home() {
             onClick={() => setModalOpen(true)}
             className="rounded-full border border-white/15 px-5 py-2 text-sm text-white transition hover:border-[#C6A86A] hover:text-[#C6A86A] md:hidden"
           >
-            Access
+            Join
           </button>
         </div>
       </nav>
@@ -251,7 +251,7 @@ export default function Home() {
 
         <div className="relative z-10 mx-auto max-w-6xl text-center">
           <div className="mb-10 inline-flex rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.32em] text-[#C6A86A]">
-            Mechanical NAS100 Research
+            Free NAS100 Telegram
           </div>
 
           <h1 className="mx-auto max-w-5xl text-5xl font-light leading-tight tracking-tight text-white md:text-7xl">
@@ -260,9 +260,8 @@ export default function Home() {
           </h1>
 
           <p className="mx-auto mt-8 max-w-3xl text-lg leading-8 text-white/60 md:text-xl">
-            Edge Private Fund gives members access to daily NAS100 model outputs
-            from a fully mechanical trading system, supported by historical
-            testing, live tracking and transparent performance.
+            Join the free Edge Telegram for NAS100 model updates, performance
+            insights and education around a fully mechanical trading system.
           </p>
 
           <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -270,7 +269,7 @@ export default function Home() {
               onClick={() => setModalOpen(true)}
               className="rounded-full bg-white px-8 py-3 text-sm font-medium text-black transition hover:bg-[#C6A86A]"
             >
-              Get Access
+              Join Free Telegram
             </button>
 
             <a
@@ -289,7 +288,7 @@ export default function Home() {
             ["Market", "NAS100"],
             ["Output", "Up to 2 trades daily"],
             ["Style", "Fully mechanical"],
-            ["Membership", "Hosted on Skool"],
+            ["Access", "Free Telegram"],
           ].map(([label, value]) => (
             <div
               key={label}
@@ -309,7 +308,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="The Model"
             title="A mechanical NAS100 system delivered as daily trade opportunities."
-            text="This is not a discretionary chat full of random trade calls. Members receive outputs from a rule-based NAS100 strategy developed through backtesting, robustness checks and live validation."
+            text="This is not a discretionary chat full of random trade calls. The model is rule-based and was developed through backtesting, robustness checks and live validation."
           />
 
           <div className="grid gap-5 md:grid-cols-2">
@@ -333,14 +332,14 @@ export default function Home() {
               Daily Delivery
             </p>
             <h3 className="mt-4 max-w-4xl text-3xl font-light tracking-tight text-white md:text-4xl">
-              Each trading day, members receive up to two NAS100 opportunities
-              with exact execution levels.
+              Join the free Telegram to learn how the model works and receive
+              further instructions.
             </h3>
             <p className="mt-6 max-w-3xl text-sm leading-7 text-white/50">
               The system is designed to keep execution consistent: predefined
               rules, predefined risk, predefined invalidation and clear targets.
-              The purpose is to remove emotional decision-making and present the
-              model output in a clean, actionable format.
+              The free Telegram is where updates, education and next steps are
+              shared.
             </p>
           </div>
         </div>
@@ -555,7 +554,7 @@ export default function Home() {
         <div className="mx-auto max-w-5xl">
           <SectionHeading
             eyebrow="FAQ"
-            title="Important information before requesting access."
+            title="Important information before joining the free Telegram."
           />
 
           <div className="space-y-4">
@@ -579,16 +578,16 @@ export default function Home() {
       <section id="join" className="bg-[#050505] px-6 py-28">
         <div className="mx-auto max-w-4xl rounded-[2rem] border border-white/10 bg-gradient-to-b from-white/[0.06] to-white/[0.02] p-8 text-center md:p-14">
           <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#C6A86A]">
-            Private Membership
+            Free Telegram Access
           </p>
 
           <h2 className="text-4xl font-light tracking-tight text-white md:text-6xl">
-            Request access to Edge Private Fund.
+            Join the free Edge Telegram.
           </h2>
 
           <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-white/50">
-            Membership is managed through our private Skool community. Click
-            below to view the community and request access.
+            Enter the free Telegram to learn how the NAS100 model works, view
+            updates, understand the process and receive further instructions.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -596,7 +595,7 @@ export default function Home() {
               onClick={() => setModalOpen(true)}
               className="rounded-full bg-white px-8 py-3 text-sm font-medium text-black transition hover:bg-[#C6A86A]"
             >
-              Get Access
+              Join Free Telegram
             </button>
 
             <a
@@ -609,8 +608,8 @@ export default function Home() {
 
           <p className="mx-auto mt-8 max-w-2xl text-xs leading-6 text-white/30">
             Trading involves risk. Past performance does not guarantee future
-            results. Edge Private Fund provides research and trade ideas only
-            and is not financial advice.
+            results. Edge Private Fund provides market research and trade ideas
+            only and is not financial advice.
           </p>
         </div>
       </section>
